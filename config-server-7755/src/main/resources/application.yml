@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # gitee : nice
+          uri: https://gitee.com/dicoyoung/microservice-config.git
+          # github : fucking
+          # uri: https://github.com/DicoYoung/springcloud-config.git
+      label: master
+server:
+  port: 7755

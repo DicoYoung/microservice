@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-7003" />
+        <module name="turbine" />
+        <module name="consumer-feign-9003" />
+        <module name="microservice" />
+        <module name="dashboard-9001" />
+        <module name="gateway-6001" />
+        <module name="provider-8003" />
+        <module name="provider-8002" />
+        <module name="eureka-7001" />
+        <module name="provider-8001" />
+        <module name="config-server-7755" />
+        <module name="eureka-7002" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server-7755" options="-parameters" />
+      <module name="consumer-feign-9003" options="-parameters" />
+      <module name="dashboard-9001" options="-parameters" />
+      <module name="eureka-7001" options="-parameters" />
+      <module name="eureka-7002" options="-parameters" />
+      <module name="eureka-7003" options="-parameters" />
+      <module name="gateway-6001" options="-parameters" />
+      <module name="provider-8001" options="-parameters" />
+      <module name="provider-8002" options="-parameters" />
+      <module name="provider-8003" options="-parameters" />
+      <module name="turbine" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+server:
+  port: 6001
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.com:7001/eureka/,http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/
+  instance:
+    instance-id: gateway.com
+
+    prefer-ip-address: true
+zuul:
+  routes:
+
+    user:
+      serviceId: provider
+      path: /user/**
+
+  ignored-services: provider
+
+  # ignored-services: "*"
+  prefix: /neu
+#
+#  AccessTokenFilter:
+#    pre:
+#      disable: true
+#  AccessTokenFilter1:
+#    pre:
+#      disable: true
